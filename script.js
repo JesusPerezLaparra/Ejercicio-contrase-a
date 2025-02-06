@@ -7,18 +7,15 @@ elemento.style.background = color;
 elemento.innerText = "Hola, " + nombre + "!";*/
 
 const contrasenya = document.getElementById("contraseña");
-let longitud
+let longitud;
 
-
-function Contraseña (); { 
-if (longitud<=8)
-    elemento.innerText = "La contraseña es demasiado corta"
-} else if {
-    (longitud > 8 = 10)
-    elemento.innerText = "La contraseña no es del todo segura"
-
-} else {
-        (longitud <= 10)
-        elemento.innerText = "La contraseña es segura"
-
+function contraseña() {
+    if (longitud <= 8) {
+        elemento.innerText = "La contraseña es demasiado corta";
+    } else if (longitud > 8 && longitud < 10) {
+        elemento.innerText = "La contraseña no es del todo segura";
+    } else {
+        longitud <= 10;
+        elemento.innerText = "La contraseña es segura";
     }
+}
