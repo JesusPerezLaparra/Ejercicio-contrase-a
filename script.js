@@ -43,7 +43,8 @@ function check_nick(){
 }
 
 function validar(){
-    alert("Texto");
+    let texto = nickName.value;
+    alert("Login: " + texto);
 }
 
 elemento.addEventListener("input", contraseña);
