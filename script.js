@@ -14,13 +14,13 @@ function contraseña() {
     let longitud = elemento.value.length;
     let longitudNick = nickName.value.length;
     const texto = document.getElementById("texto");
-    if (longitud <= 8) {
+    if (longitud < 8) {
         texto.innerText = "La contraseña es demasiado corta";
         texto.className = "inferior";
         pass_ok = false;
         botonLogin.setAttribute('disabled', "true");
         botonLogin.className = "";
-    } else if (longitud > 8 && longitud < 10) {
+    } else if (longitud >= 8 && longitud <= 10) {
         texto.innerText = "La contraseña no es del todo segura";
         texto.className = "similar";
         pass_ok = false;
@@ -57,3 +57,4 @@ function validar(){
 elemento.addEventListener("input", contraseña);
 nickName.addEventListener("input", check_nick);
 botonLogin.addEventListener('click', validar);
+
