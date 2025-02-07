@@ -10,14 +10,18 @@
         <title>Contraseña</title>
     </head>
     <body>
-        <input
-            type="password"
-            id="contrasenya" 
-            placeholder="Ingrese aquí su contraseña"
-        />
-        <p id = "texto" class=""> La contraseña es</p>
-    
-
+        <form action="">
+            <div id="campos">
+                <input type="text" id="nick" placeholder="Ingrese su usuario" />
+                <input
+                    type="password"
+                    id="contrasenya"
+                    placeholder="Ingrese aquí su contraseña"
+                />
+            </div>
+            <p id="texto" class="">La contraseña es</p>
+            <button id="login">Login</button>
+        </form>
         <script src="script.js"></script>
     </body>
 </html>
