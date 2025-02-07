@@ -1,13 +1,27 @@
 body {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
-
+#campos{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    padding-top: 300px;
+    justify-items: center;
+}
 #contrasenya {
     border: 2px solid black;
     border-radius: 15x;
     padding: 3px
 }
-
+p{
+    margin: 5px;
+}
+#nick{
+    margin-bottom: 10px;
+}
 .inferior {
     color: red
 }
