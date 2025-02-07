@@ -1,4 +1,23 @@
-.titulo {
-    
+body {
+    text-align: center;
 }
+
+#contrasenya {
+    border: 2px solid black;
+    border-radius: 15x;
+    padding: 3px
+}
+
+.inferior {
+    color: red
+}
+
+.similar {
+    color: yellow;
+}
+
+.superior {
+    color: green;
+}
+
 

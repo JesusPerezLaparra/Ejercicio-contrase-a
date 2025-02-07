@@ -6,16 +6,21 @@ const elemento = document.getElementById("titulo");
 elemento.style.background = color;
 elemento.innerText = "Hola, " + nombre + "!";*/
 
-const contrasenya = document.getElementById("contraseña");
-let longitud;
+const elemento = document.getElementById("contrasenya");
 
 function contraseña() {
+    let longitud = elemento.value.length;
+    const texto = document.getElementById("texto");
     if (longitud <= 8) {
-        elemento.innerText = "La contraseña es demasiado corta";
+        texto.innerText = "La contraseña es demasiado corta";
+        texto.className = "inferior";
     } else if (longitud > 8 && longitud < 10) {
-        elemento.innerText = "La contraseña no es del todo segura";
+        texto.innerText = "La contraseña no es del todo segura";
+        texto.className = "similar";
     } else {
-        longitud <= 10;
-        elemento.innerText = "La contraseña es segura";
+        texto.className = "superior";
+        texto.innerText = "La contraseña es segura";
     }
 }
+
+elemento.addEventListener("input", contraseña);
